@@ -1,6 +1,6 @@
-from market import app
+from market import App
 
 
 #main
 if(__name__ == '__main__'):
-    app.run(debug=True)
+    App.run(debug=True)
