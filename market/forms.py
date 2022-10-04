@@ -5,7 +5,7 @@ from wtforms.validators import Length, EqualTo, Email, DataRequired, ValidationE
 from market.models import User
 
 
-class RegisterForm(FlaskForm):
+class RegisterFormdk(FlaskForm):
 
    def validate_username(self, username_to_check):
       user = User.query.filter_by(username=username_to_check.data).first()
