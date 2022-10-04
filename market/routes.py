@@ -12,7 +12,7 @@ def index():
 
 @app.route('/market', methods = ['GET','POST'])
 @login_required
-def market():
+def market_dk():
     purchase_form = PurchaseItemForm()
     selling_form = SellItemForm()
     if request.method == "POST":
