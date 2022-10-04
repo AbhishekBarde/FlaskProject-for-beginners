@@ -17,7 +17,7 @@ class User(db.Model, UserMixin):
     items = db.relationship("Item", backref="owner_user", lazy=True)
 
     @property
-    def prettier_budget(self):
+    def prettier_budget_dk(self):
         if len(str(self.budget)) >= 4:
             return f'{str(self.budget)[:-3]},{str(self.budget)[-3:]}'
         else:
